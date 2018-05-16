@@ -1,0 +1,51 @@
+*{
+	margin:0;
+	padding:0;
+}
+.content{
+	border:1px solid #ccc;
+	box-shadow: 0 0 10px #000;
+	margin:100px auto;
+	width: 1000px;
+}
+/*title*/
+.title{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: rgba(0,0,0,0.4);
+	color:#fff;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 15px 20px;
+}
+/*infor*/
+.infor{
+	border-bottom: 2px solid #999;
+}
+.infor h2{
+	padding:30px 20px;
+	display: inline-block;
+	background-color: #eee;
+	font-weight: normal;
+	font-size: 14px;
+	margin-right: 10px;
+}
+.infor .bt{
+	font-weight: bold;
+}
+.infor .xz{
+	margin-right: 50px;
+}
+
+/*ablitity*/
+.ablitity .ab{
+	margin-top:20px;
+}
+.ablitity .des{
+	font-size: 14px;
+	margin-right: 90px;
+
+}
+.infor p{
+	display: inline-block;
+}

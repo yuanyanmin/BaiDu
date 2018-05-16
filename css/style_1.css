@@ -1,0 +1,39 @@
+*{
+	margin:0;
+	padding:0;
+}
+.content{
+	border:1px solid #ccc;
+	box-shadow: 0 0 10px #000;
+	margin:100px auto;
+	width: 660px;
+	padding: 20px;
+}
+/*title*/
+.title{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+/*infor*/
+.infor{
+	margin-bottom: 20px;
+}
+.infor h2{
+	padding:10px 0;
+	margin-bottom: 10px;
+}
+.infor .bt{
+	font-weight: bold;
+}
+.infor .xz{
+	margin-right: 50px;
+}
+
+/*ablitity*/
+.ablitity .ab{
+	margin-top:20px;
+}
+.ablitity .des{
+	font-size: 14px;
+}
