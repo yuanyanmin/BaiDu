@@ -53,27 +53,34 @@ a{
 	margin-left: 10px;
 	background: #ccc;
 }
+.banner .listIndex ul li.selects{
+	background-color: #f00;
+}
 /*********************content*********************/
+
 .content .ctab{
 	border:1px solid #ccc;
 }
 .content .tab{
+	position: relative;
 	width: 960px;
 	margin:0 auto;
 	height: 45px;
-	padding-top: 16px;
-	box-sizing: border-box;
-	overflow: hidden;
 }
-
+.content .tab ul{
+	position: absolute;
+	bottom: -1px;
+}
 .content .tab ul li{
 	float: left;
-	border: 1px solid #ccc;
-	border-bottom: none;
+	border: 1px solid #ddd;
 	padding: 5px 10px;
-	margin-left: 10px;
-	border-radius:30%;
+	border-radius:20px 20px 0 0;
+	background-color: #eee;
+}
+.content .tab ul li.active{
 	background-color: #fff;
+	border-bottom: 1px solid #fff;
 }
 .content .ccon{
 	width: 960px;
@@ -81,13 +88,21 @@ a{
 }
 .content .ccon ul{
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-between;
 }
 .content .ccon ul li{
 	border:1px solid #ccc;
-	padding:80px;
-	margin-top:5px;
+	padding:55px;
+	margin:5px;
+}
+.content .ccon ul .item1{
+	flex:1 1 33.33%;
+}
+.content .ccon ul .item2{
+	flex:1 1 25%;
+}
+.content .ccon ul .item3{
+	flex:1 1 33.33%;
 }
 /*********************footer*********************/
 .footer{
