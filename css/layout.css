@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding:0;
+	list-style-type: none;
+}
+a{
+	text-decoration:none;
+	color:#fff;
+}
+/*********************header*********************/
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #000;
+	color:#fff;
+	line-height: 60px;
+	position: fixed;
+	top:0;
+	z-index: 2;
+}
+.header .box{
+	width: 960px;
+	margin:0 auto;
+}
+.header .logo{
+	float: left;
+}
+.header .nav{
+	float: right;
+}
+.header .nav ul li{
+	float: left;
+	padding:0 20px;
+}
+/*********************banner*********************/
+.banner{
+	width: 100%;
+	height: 290px;
+	margin-top: 60px;
+	background-color: green;
+	position: relative;
+}
+.banner .listIndex{
+	position: absolute;
+	bottom: 10px;
+	right: 16%;
+	color:#fff;
+}
+.banner .listIndex ul li{
+	float: left;
+	padding: 5px 10px;
+	border:1px solid #000;
+	margin-left: 10px;
+	background: #ccc;
+}
+/*********************content*********************/
+.content .ctab{
+	border:1px solid #ccc;
+}
+.content .tab{
+	width: 960px;
+	margin:0 auto;
+	height: 45px;
+	padding-top: 16px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.content .tab ul li{
+	float: left;
+	border: 1px solid #ccc;
+	border-bottom: none;
+	padding: 5px 10px;
+	margin-left: 10px;
+	border-radius:30%;
+	background-color: #fff;
+}
+.content .ccon{
+	width: 960px;
+	margin:10px auto;
+}
+.content .ccon ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.content .ccon ul li{
+	border:1px solid #ccc;
+	padding:80px;
+	margin-top:5px;
+}
+/*********************footer*********************/
+.footer{
+	width: 100%;
+	height: 70px;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	line-height: 70px;
+	color:#fff;
+}
