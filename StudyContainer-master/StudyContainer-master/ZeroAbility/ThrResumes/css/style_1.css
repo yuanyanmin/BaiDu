@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.head-title{
+    line-height: 80px;
+}
+.resume-con {
+    width: 905px;
+    height: 1020px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;border: 1px solid gray;
+    overflow: hidden;
+}
+.descriptions{
+    width: 680px;
+    height: 920px;
+}
+.float-clear {
+    clear: both;
+}
+.des-head{
+    line-height: 70px;
+    font-size: 28px;
+}
+.des-items-t{
+    font-size: 20px;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.des-items-d {
+    font-size: 20px;
+    margin-right: 30px;
+}
+dt,dd{
+    line-height: 40px;
+    float: left;
+}

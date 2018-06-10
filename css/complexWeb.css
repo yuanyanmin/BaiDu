@@ -1,0 +1,390 @@
+	/*left-nav*/
+	.left-nav{
+		width: 100px;
+		height: 100%;
+		background-color: #1d2531;
+
+		position: fixed;
+		top:0;
+		left:0;
+	}
+	.left-nav .big_icon li {
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		line-height: 50px;
+		border-radius:50px;
+		margin: 10px auto;
+	}
+	.left-nav .big_icon li img{
+		vertical-align: middle;
+	}
+	.left-nav .big_icon li:nth-child(1){
+		background-color: #2298f1;
+	}
+	.left-nav .big_icon li:nth-child(2){
+		background-color: #9683e3;
+	}
+	.left-nav .big_icon li:nth-child(3){
+		background-color: #ce2b0f;
+	}
+	.left-nav .big_icon li:nth-child(4){
+		background-color: transparent;
+		border:2px solid #2d3848;
+	}
+	.left-nav .big_icon .littlePoint{
+		position: absolute;
+		top:25px;
+		left: -10px;
+	}
+	.left-nav .small_icon li {
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		bottom: 35px;
+		left: 25px;
+	}
+	.left-nav .small_icon li:nth-child(2){
+		left:50px;
+	}
+	/*hidden-box*/
+	.left-nav .hidden-box {
+		width: 250px;
+		height: 100%;
+		background-color: #222c3c;
+
+		position: fixed;
+		top:0;
+		left: 100px;
+
+		display: none;
+	}
+	.left-nav .hidden-box .menu{
+		margin: 20px 20px;
+		border-bottom: 1px solid #2a3547;
+	}
+	.left-nav .hidden-box .menu .title {
+		color : #5b6779;
+		margin-bottom: 5px;
+		font-size: 12px;
+	}
+	.left-nav .hidden-box .menu .title img{
+		float: right;
+	}
+	.left-nav .hidden-box .menu .des {
+		color: #b7c0cd;
+		margin-bottom: 10px;
+	}
+	.left-nav .hidden-box .menu .des li{
+		padding: 5px 0;
+		font-size: 14px;
+	}
+	.left-nav .hidden-box .menu .des li .num {
+		float: right;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #269bf3;
+		text-align: center;
+		line-height: 20px;
+		color:#fff;
+		border-radius: 10px;
+		font-size: 12px;
+	}
+
+	.left-nav .hidden-box .menu .des li .red {
+		background-color: #ce2b0f;
+	}
+	.left-nav .hidden-box .menu .des i {
+		padding-right: 20px;
+	}
+	.left-nav .hidden-box .menu:last-child {
+		border: none;
+	}
+	.left-nav .hidden-box .progress {
+		position: absolute;
+		bottom: 35px;
+		left: 25px;
+		font-size: 14px;
+		color: #d4d5d7;
+		width: 90%;
+		padding-right: 20px;
+		box-sizing: border-box;
+	}
+	.left-nav .hidden-box .progress .right {
+		float: right;
+	}
+	/*进度条就先这样吧。有时间再详细写*/
+	.left-nav .hidden-box .progress .jindu {
+		width: 100%;
+		height: 10px;
+		border-radius:10px;
+		background-color: #2d3848;
+		margin-top: 10px;
+	}
+	.left-nav .hidden-box .progress .jindu .actually{
+		width: 20%;
+		height: 10px;
+		border-radius:10px;
+		background-color: #9581e3;
+	}
+	/*content*/
+	.content{
+		width: 100%;
+		padding-left: 100px;
+		box-sizing: border-box;
+	}
+	.content .header{
+		border:1px solid #e6e9ec;
+		padding-bottom: 10px;
+	}
+	.content .header > span{	
+		display: inline-block;
+		font-size: 24px;
+		margin: 30px;
+	}
+	.content .person{
+		float: right;
+		width: 260px;
+		height: 80px;
+		margin-top: 10px;
+		position: relative;
+	}
+	.content .person img:nth-child(1){
+		height: 100%;
+		border-radius: 50px;
+		float: left;
+	}
+	.content .person .des {
+		margin-left: 100px;
+		margin-top: 10px;
+		font-size: 14px;
+		color:#bfc7d8;
+	}
+	.content .person .name{
+		color: #77b8f5;
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.content .person .jiantou{
+		position: absolute;
+		right: 20px;
+		top:15px;
+		transform: rotate(90deg);
+		color:#bfc7d8;
+		font-size: 35px;
+		cursor: pointer;
+	}
+	.content .person .status {
+		position: absolute;
+		bottom:3px;
+		left: 45px;
+		background-color: #fff;
+		padding:5px;
+		border-radius: 50%;
+	}
+
+	/*comment_left 内容左侧*/
+
+	.comment .comment_left {
+		width: 30%;
+		float: left;
+		border-bottom: 1px solid #e6e9ec;
+		border-right: 1px solid #e6e9ec; 
+	}
+	.comment .comment_left .search-box,
+	.comment .comment_right .bessie-box{
+		border-bottom: 1px solid #e6e9ec;
+	}
+	.comment .comment_left .search,
+	.comment .comment_right .bessie {
+		width: 80%;
+		margin:30px auto;
+		position: relative;
+	}
+	.comment .comment_left .search input{
+		width: 100%;
+		padding-left: 15px;
+		border-radius: 10px;
+		outline:none;
+		border:1px solid #e5e8ee;
+		height: 40px;
+		box-sizing: border-box;
+
+	}
+	.comment .comment_left .search .search-icon {
+		position: absolute;
+		top: 10px;
+		right: 20px;
+	}
+
+	.comment .comment_left .comment-lists {
+		font-size: 14px;
+		color:#585d68;
+		border-bottom: 1px solid #e6e9ec;
+	}
+	.border {
+		border-left:3px solid #2399f1;
+	}
+	.comment .comment_left .comment-lists .comment-list {
+		padding:20px;
+		position: relative;
+	}
+	.comment .comment_left .comment-lists .comment-list{
+		
+	}
+	.comment .comment_left .comment-lists .comment-list img{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+	}
+	.comment .comment_left .comment-lists .comment-list .name {
+		position: absolute;
+		top: 25px;
+		left: 105px;
+		line-height: 30px;
+	}
+	.comment .comment_left .comment-lists .comment-list .name .xm {
+		font-size: 18px;
+		color: #2399f1;
+		background: url(../images/complexWeb/images/Base2.png) no-repeat;
+		background-size: 10px 10px;
+		background-position: left center;
+		padding-left:15px;
+	}
+	.comment .comment_left .comment-lists .comment-list .juli{
+		position: absolute;
+		top: 30px;
+		right: 20px;
+	}
+	.comment .comment_left .comment-lists .comment-list .des {
+		margin-top: 10px;
+		line-height: 20px;
+	}
+	.comment .comment_left .comment-lists .comment-list .num{
+		position: absolute;
+		top:60px;
+		right: 20px;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		background-color: #269bf3;
+		text-align: center;
+		line-height: 20px;
+		color:#fff;
+		border-radius: 10px;
+		font-size: 12px;
+	}
+	.comment .comment_right {
+		width: 69.9%;
+		height: 100px;
+		float: right;
+	}
+	.comment .comment_right .bessie{
+		width: 150px;
+		font-size: 18px;
+		line-height: 40px;
+		display: inline-block;
+		padding-left: 30px;
+		background: url(../images/images/Status1.png) no-repeat 150px center;
+	}
+	.comment .comment_right .bessie-right{
+		width: 304px;
+		height: 30px;
+		float: right;
+		padding-top: 35px;
+	}
+	.comment .comment_right .bessie-right .top .box,.comment .comment_right .bessie-right .top .box2{
+		width: 110px;
+		height: 30px;
+		border-radius: 5px;
+		background-color: #f7f8fa;
+		display: flex;
+		float: left;
+	}
+	.comment .comment_right .bessie-right .top .box2{
+		width: 70px;
+	}
+	.comment .comment_right .bessie-right .top .box i,.comment .comment_right .bessie-right .top .box2 i{
+		flex:1;
+		text-align: center;
+		border:1px solid #ced0da;
+		line-height: 30px;
+	}
+	.comment .comment_right .bessie-right .top .lines{
+		width: 2px;
+		height: 30px;
+		background-color: #f0f1f4;
+		float: left;
+		margin: 0 20px;
+	}
+	.comment .comment_right .bessie-right .top p{
+		float: left;
+		margin-right: 20px;
+		line-height: 30px;
+		font-size: 14px;
+	}
+
+	.comment .comment_right  .bessie-content {
+		width: 100%;
+		padding-left: 30px;
+		padding-top: 20px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	.comment .comment_right .tx{
+		width: 70px;
+		margin-right: 20px;
+		float: left;
+	}
+	.comment .comment_right  .bessie-content img{
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+	}
+	.comment .comment_right .content-list .text{
+		float: left;
+		font-size: 14px;
+		width: 80%;
+		color:#585d68;
+	}
+	.comment .comment_right .content-list .text h5{
+		font-size: 16px;
+		font-weight: bold;
+		display: inline-block;
+		margin-right: 20px;
+		line-height: 25px;
+	}
+	.comment .comment_right .content-list .text p{
+		margin-top: 10px;
+		line-height: 20px;
+	}
+	.comment .comment_right .content-list{
+		margin-bottom: 30px;
+		overflow: hidden;
+	}
+	.comment .comment_right	.time-lines {
+		text-align: center;
+		font-size: 14px;
+		position: relative;
+	} 
+	.comment .comment_right	.time-lines::before{
+		content: "";
+		width: 48%;
+		height: 2px;
+		border-bottom: 2px solid #d9dde3;
+		position: absolute;
+		top:50%;
+		left: -30px;
+		margin-top: -2px;
+	}
+	.comment .comment_right	.time-lines::after{
+		content: "";
+		width: 45%;
+		height: 2px;
+		border-bottom: 2px solid #d9dde3;
+		position: absolute;
+		top:50%;
+		right: 0;
+		margin-top: -2px;
+	}

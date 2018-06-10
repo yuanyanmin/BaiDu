@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>编码要求一：弹性盒模型实现</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style_3.css" />
+</head>
+
+<body>
+
+    <div class="demend">
+        <img src="images/demed.png" alt="编码一要求" title="编码一要求">
+    </div>
+    <a href="html1_layout.html" style="text-align: center;">
+        <p class="con-desc">点击跳转浮动布局实现要求</p>
+    </a>
+    <a href="html2_layout.html" style="text-align: center;">
+        <p class="con-desc">点击跳转定位实现要求</p>
+    </a>
+    <h2>弹性和模型实现，点击深蓝色标题亲自体验！</h2>
+    <div class="contentbox">
+        <a target="_blank" href="layoutflex/flexlayout1.html">
+            <p class="con-desc">两栏布局左30%右70%</p>
+        </a>
+        <img src="images/flexlayout1full.png" alt="">
+        <img src="images/flexlayout1half.png" alt="">
+        <p>只用在父级添加一句display：flex就可以了是不是很方便！</p>
+    </div>
+    <div class="contentbox">
+        <a target="_blank" href="layoutflex/flexlayout2.html">
+            <p class="con-desc">两栏布局
+                <span>左边</span>固定
+                <span>右边</span>自适应</p>
+        </a>
+        <img src="images/flexlayout2full1.png" alt="">
+        <p>如果父级使用了flex属性值，而子元素没有内容的话，会被有内容的元素占据位置！</p>
+        <img src="images/flexlayout2full2.png" alt="">
+        <img src="images/flexlayout2half.png" alt="">
+        <img src="images/flexlayout2small.png" alt="">
+        <p>注意子级的元素的宽度虽然设置了固定宽度，但是依旧被挤压减小了，比例就是满屏是对应的比例</p>
+    </div>
+    <div class="contentbox">
+        <a target="_blank" href="layoutflex/flexlayout3.html">
+            <p class="con-desc">两栏布局
+                <span>右边</span>固定
+                <span>左边</span>自适应</p>
+        </a>
+        <img src="images/flexlayout3full.png" alt="">
+        <img src="images/flexlayout3half.png" alt="">
+        <p>实现这个就更加容易了，与上面的布局左右属性交换，或者给父级加入flex-direction:raw-reserve;即可使行顺序对调！</p>
+    </div>
+    <div class="contentbox">
+        <a target="_blank" href="layoutflex/flexlayout4.html">
+            <p class="con-desc">三栏布局
+                <span>左右</span>固定
+                <span>中间</span>自适应</p>
+        </a>
+        <img src="images/flexlayout4full.png" alt="">
+        <img src="images/flexlayout4half.png" alt="">
+        <img src="images/flexlayout4small.png" alt="">
+        <p>对比浮动和定位，弹性盒子则非常非常简单了，虽然固定宽度也会被挤压，但是完美解决了中间和盒子的占位问题，同样，也不会因为挤压而将内容覆盖遮蔽！！！</p>
+    </div>
+    <div class="contentbox">
+        <a target="_blank" href="layoutflex/flexlayout5.html">
+            <p class="con-desc">三栏布局
+                <span>左中</span>固定
+                <span>右</span>自适应</p>
+        </a>
+        <img src="images/flexlayout5full.png" alt="">
+        <img src="images/flexlayout5full.png" alt="">
+        <img src="images/flexlayout5small.png" alt="">
+        <p>左中两个盒子不会受到挤压！</p>
+    </div>
+</body>
+
+</html>

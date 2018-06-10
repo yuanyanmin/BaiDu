@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>乘法口诀表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="btClik" onclick="showAll()">点击看效果</div>
+    <h3>本案例一共有5个动画提供展示,打开控制台看的更清楚</h3>
+    <div id="oBox"></div>
+</body>
+<script>
+    // console.log(typeof(0));
+    var animaArry = new Array("rollIn", "swing", "slideInDown", "rubberBand", "bounceInRight");
+    var radomNum = parseInt((Math.random() * 10 + 1)) % 4;
+
+    function showAll() {
+        var textHtml = document.getElementById("oBox");
+        textHtml.innerHTML = "";
+        var divString = "";
+        var result = 0;
+        var animationdelay = 0.3;
+        radomNum++;
+        var arryTag = radomNum % 5;
+        for (var lineNum = 1; lineNum <= 9; lineNum++) {
+            for (var multiplier = 1; multiplier <= lineNum; multiplier++) {
+                result = (lineNum) * multiplier;
+                divString = ' <div class = "oBoxChild ' + animaArry[arryTag] + ' animated"style = "animation-delay:' + (animationdelay += 0.1) + 's;" > ' + multiplier + ' * ' + (lineNum) + '=' + (result) + '</div>';
+                if (multiplier === lineNum) {
+                    divString += ' <br> ';
+                }
+                textHtml.innerHTML += divString;
+            }
+            // divString += ' <br> ';
+        }
+        for (var lineNum = 9; lineNum >= 1; lineNum--) {
+            for (var multiplier = 1; multiplier <= lineNum; multiplier++) {
+                result = (lineNum) * multiplier;
+                divString = ' <div class = "oBoxChild ' + animaArry[arryTag] + ' animated"style = "animation-delay:' + (animationdelay += 0.1) + 's;" > ' + multiplier + ' * ' + (lineNum) + '=' + (result) + '</div>';
+                if (multiplier === lineNum) {
+                    divString += ' <br> ';
+                }
+                textHtml.innerHTML += divString;
+            }
+            // divString += ' <br> ';
+        }
+        for (var lineNum = 9; lineNum >= 1; lineNum--) {
+            for (var multiplier = 9; multiplier >= lineNum; multiplier--) {
+                result = (lineNum) * multiplier;
+                divString = ' <div class = "oBoxChild ' + animaArry[arryTag] + ' animated"style = "animation-delay:' + (animationdelay += 0.1) + 's;" > ' + multiplier + ' * ' + (lineNum) + '=' + (result) + '</div>';
+                if (multiplier === lineNum) {
+                    divString += ' <br> ';
+                }
+                textHtml.innerHTML += divString;
+            }
+            // divString += ' <br> ';
+        }
+        console.log(arryTag);
+        console.log(animaArry[arryTag]);
+        // textHtml.innerHTML += divString;
+    }
+</script>
+
+</html>

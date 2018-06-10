@@ -1,0 +1,253 @@
+@charset "utf-8";
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: 12px "MOEsong", "Arial Narrow", HELVETICA;
+    background: #fff;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+}
+
+em {
+    font-style: normal;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+/* header css */
+.h-nav-container {
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    display: flex;
+    position: relative;
+}
+.h-right-icon {
+    width: 120px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    right: 0;
+}
+.h-left-logo img {
+    max-width: 102px;
+}
+.h-left-logo {
+    max-width: 102px;
+    height: 70px;
+    line-height: 70px;
+    padding-left: 40px;
+}
+p {
+    word-wrap: break-word;
+}
+
+.container-top {
+    width: 100%;
+    height: 300px;
+    background-color: #6b3;
+    position: relative;
+}
+
+.right-selector {
+    width: 180px;
+    height: 90px;
+    position: absolute;
+    right: 10%;
+    bottom: 10px;
+    display: flex;
+}
+
+.selec-items {
+    width: 30px;
+    height: 18px;
+    background-color: rgba(235, 235, 235, 0.644);
+    color: gray;
+    font-size: 18px;
+    padding: 6px 0;
+    text-align: center;
+}
+
+.selec-items:hover {
+    padding-top: 16px;
+}
+
+.right-selector>:nth-child(1) {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.right-selector>:nth-child(2) {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.right-selector>:nth-child(3) {
+    position: absolute;
+    bottom: 10px;
+    left: 90px;
+}
+
+.right-selector>:nth-child(4) {
+    position: absolute;
+    bottom: 10px;
+    left: 130px;
+}
+.sole-hidden{
+    overflow: hidden; /* 由于位置原因，tab选项卡内隐藏在激活选项卡下面的选项卡会被挤出来一点点，故必须增加一个容纳盒子来将其隐藏 */
+}
+.container-tab {
+    width: 100%;
+    height: 705px;   /* 没办法，子级用了绝对定位，要用父级高度撑开以接上后面的元素 */
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+/*tab选项卡内容 info-box setup */
+
+.info-box {
+    width: 100%;
+    height: 675px;
+    margin: 0 auto;
+}
+
+/* styling info-box tabs */
+
+.info-box ul {
+    max-width: 940px;
+    padding-left: 0;
+    margin: auto;
+    margin-top: 0;
+}
+
+.info-box li {
+    float: left;
+    list-style-type: none;
+    width: 150px;
+}
+
+.info-box li a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    line-height: 3;
+    color: black;
+    background-color: rgb(240, 240, 240);
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid gainsboro;
+}
+
+.info-box li a:focus,
+.info-box li a:hover {
+    color: white;
+}
+
+.info-box li a.active {
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid white;
+}
+
+/* styling info-box panels */
+
+.info-box .panels {
+    clear: both;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid gainsboro;
+    border-top: 1px solid gainsboro;
+    z-index: -1;
+    top: -1px;
+}
+
+.info-box article {
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}
+
+.info-box .active-panel {
+    z-index: 1;
+    width: 100%;
+}
+
+.home-contentbox {
+    max-width: 950px;
+    height: 600px;
+    margin: 0px auto 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hc-small {
+    width: inherit;
+    height: 100%;
+    display: flex;
+    margin:5px 0;
+}
+
+.hc-childbox {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid gainsboro;
+    word-break: break-all;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 5px;
+    padding-top: 80px;
+    height: inherit;
+}
+.footcontainer{
+    width: 100%;
+    height: 90px;
+    background-color: #666;
+    text-align: center;
+    padding-top: 40px;
+}
+.footertitle{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>对浮动和定位的展示</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>浮动与定位区别</h2>
+    <h2 style="text-align: center">浮动</h2>
+    <div class="showbox">
+        <h3>hover这个灰色盒子时，橙色盒子浮动，注意看透明关系</h3>
+
+        <div class="floatbox">
+            <p>橙色盒子内容</p>
+        </div>
+        <div class="nofloatbox">
+            <p>橙色盒子没浮动</p>
+            <p>橙色盒子浮动了</p>
+        </div>
+        <p>橙色盒子浮动后，盒子容器脱离文档流，后面顺序的蓝色盒子容器占据橙色盒子位置，但盒子的内容却依然要和橙色盒子的内容竞争空间</p>
+    </div>
+    <div class="showbox2">
+        <h3>hover这个灰色盒子时，两个盒子都浮动,注意看透明关系</h3>
+        <div class="floatbox2">
+            <p>橙色盒子内容</p>
+        </div>
+        <div class="nofloatbox2">
+            <p>蓝色盒子内容</p>
+        </div>
+        <div class="everfloat">
+            <p>这个红色盒子永远也不浮动</p>
+        </div>
+        <p>橙蓝两个盒子都浮动后的情况了解一下</p>
+    </div>
+    <!-- 浮动 -->
+    <div class="positiontemp">
+        <h3>来看定位</h3>
+        <div class="showbox3">
+            <h3>hover这个灰色盒子时，蓝色盒子启用绝对定位,注意看透明关系</h3>
+            <div class="floatbox3">
+                <p>橙色盒子内容</p>
+            </div>
+            <div class="nofloatbox3">
+                <p>蓝色盒子内容</p>
+            </div>
+            <div class="everfloat">
+                <p>这个红色盒子永远也不浮动----------------sdfjasdoifjsadoi-</p>
+            </div>
+            <p>注意看红色盒子上的文本内容,定位建立的参考系为灰色盒子，top坐标为0，left坐标也为0，蓝色盒子完全脱离了文档流，但是橙色盒子和红色盒子依然在文档流中，注意橙色盒子和红色盒子的关系</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

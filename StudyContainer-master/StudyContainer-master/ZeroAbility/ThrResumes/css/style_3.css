@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head-title {
+    display: block;
+    color: white;
+    width: 100%;
+    line-height: 70px;
+    padding-left: 30px;
+    background-color: #858585;
+}
+
+.resume-con {
+    width: 905px;
+    height: 594px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    overflow: hidden;
+}
+
+.descriptions {
+    width: inherit;
+    height: 525px;
+    float: left;
+}
+
+.descriptions>.float-clear {
+    clear: both;
+    border-top: 1px solid #ccc;
+    height: 104px;
+}
+
+dt,
+dd {
+    float: left;
+}
+
+.des-lconten {
+    height: 50px;
+    padding-top: 30px;
+    float: left;
+}
+
+.des-head {
+    display: block;
+    font-size: 18px;
+    color: white;
+    width: 43px;
+    height: 43px;
+    padding: 30px;
+    background-color: #ccc;
+    float: left;
+}
+
+.des-items-t {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-right: 10px;
+    margin-left: 20px;
+    line-height: 103px;
+}
+
+.des-items-d {
+    font-size: 16px;
+    margin-right: 20px;
+    line-height: 103px;
+}
+
+.resume_3-lh {
+    line-height: 25px;
+}

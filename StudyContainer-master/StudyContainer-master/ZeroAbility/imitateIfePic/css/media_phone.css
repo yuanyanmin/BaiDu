@@ -1,0 +1,34 @@
+.h-middle-nav {
+    display: none;
+}
+
+.h-left-small-option {
+    line-height: 70px;
+    display: block;
+}
+
+.h-left-small-option i {
+    color: white;
+}
+
+.h-left-logo {
+    padding: 0px;
+    margin-left: calc(50% - 102px / 2 - 40px);
+}
+
+.h-right-icon {
+    width: 75px;
+}
+
+.h-right-icon i {
+    font-size: 1.3em;
+    margin-right: 5px;
+}
+.right-selector {
+    right: calc(50% - 90px);
+}
+.info-box ul {
+    max-width:300px; 
+    margin: auto;
+    display: flex;
+}

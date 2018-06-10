@@ -1,0 +1,111 @@
+ *{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    margin-left: 50px;
+}
+.showbox {
+    width: 500px;
+    height: 500px;
+    float: left;
+    background-color: darkgray;
+    margin: 50px;
+}
+
+.showbox:hover .floatbox{
+    float: left;
+}
+.nofloatbox>p+p{
+    display: none;
+}
+.showbox:hover .nofloatbox>p+p {
+   display: block;
+}
+.showbox:hover .nofloatbox>p {
+    display: none;
+}
+
+.nofloatbox {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(25, 170, 228);
+}
+
+.floatbox {
+    width: 160px;
+    height: 160px;
+    background-color: rgb(255, 165, 0,0.5);
+}
+
+
+ .showbox2 {
+     width: 500px;
+     height: 800px;
+     float: left;
+     background-color: darkgray;
+     margin: 50px;
+ }
+ .showbox2:hover .nofloatbox2{
+     float:left;
+ }
+.showbox2:hover .floatbox2{
+     float: left;
+ }
+ .nofloatbox2 {
+     width: 200px;
+     height: 200px;
+     background-color: rgba(131, 207, 236, 0.8);;
+ }
+
+ .floatbox2 {
+     width: 160px;
+     height: 160px;
+     background-color: rgb(255, 165, 0, 0.8);
+ }
+ .everfloat{
+     width:250px;
+     height:250px;
+     background-color: red;
+ }
+
+.positiontemp{
+    width:600px;
+    height: 1000px;
+    background-color: greenyellow;
+    margin: 0 auto;
+    clear: both;
+}
+ .showbox3 {
+    width: 500px;
+    height: 800px;
+    float: left;
+    background-color: darkgray;
+    margin: 50px;
+    position: relative;
+}
+
+.showbox3:hover .nofloatbox3 {
+    position: absolute;
+    top:0px;
+    left: 0px;
+}
+
+
+.nofloatbox3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(131, 207, 236, 0.8);
+}
+
+.floatbox3 {
+    width: 160px;
+    height: 160px;
+    background-color: rgb(255, 165, 0, 0.8);
+}
+
+.everfloat {
+    width: 250px;
+    height: 250px;
+    background-color: red;
+}

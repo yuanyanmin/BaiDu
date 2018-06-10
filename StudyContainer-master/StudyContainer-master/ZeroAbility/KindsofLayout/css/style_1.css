@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center
+}
+span{
+    color: orange;
+}
+.demend {
+    width: 100%;
+    text-align: center;
+}
+
+.contentbox {
+    width: 700px;
+    margin: 30px auto;
+    border: 1px solid gray;
+}
+
+.con-desc {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.contentbox img {
+    width: 100%;
+    height: auto;
+    border: 1px solid greenyellow;
+}
+
+/* 两栏式布局左30%右70% */
+
+.layout1left {
+    width: 30%;
+    height: 400px;
+    background-color: greenyellow;
+    float: left;
+}
+
+.layout1right {
+    width: 70%;
+    height: 400px;
+    background-color: lightsalmon;
+    float: right;
+}
+
+
+
+/* 两栏布局左固定右自适应 */
+.outside2 {
+    padding-left: 300px;
+    overflow: hidden;
+}
+.layout2left {
+    width: 300px;
+    height: 400px;
+    background-color: greenyellow;
+    float: left;
+    margin-left: -300px;
+}
+
+.layout2right {
+    width: 100%;
+    height: 400px;
+    background-color: lightsalmon;
+    float: left;
+}
+
+/* 两栏布局右边固定左边自适应 */
+.outside3 {
+    padding-right: 300px;
+    overflow: hidden;
+}
+.layout3left {
+    width: 100%;
+    height: 400px;
+    background-color: greenyellow;
+    float: left;
+}
+
+.layout3right {
+    width: 300px;
+    height: 400px;
+    background-color: lightsalmon;
+    float: right;
+    margin-right: -300px;
+}
+/* 三栏布局左右固定中间自适应 */
+.outside4 {
+    padding:0 300px;
+    overflow: hidden;
+}
+
+.layout4left {
+    width: 300px;
+    height: 400px;
+    background-color: greenyellow;
+    float: left;
+    margin-left: -300px;
+}
+.layout4middle{
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+    float: left;
+}
+.layout4right {
+    width: 300px;
+    height: 400px;
+    background-color: lightsalmon;
+    float: right;
+    margin-right: -300px;
+}
+/* 左中固定宽度，右边自适应 */
+.outside5 {
+    padding-left: 600px;
+    overflow: hidden;
+}
+
+.layout5left {
+    width: 300px;
+    height: 400px;
+    background-color: greenyellow;
+    float: left;
+    margin-left: -600px;
+}
+.layout5middle {
+    width: 300px;
+    height: 400px;
+    background-color: lightsalmon;
+    float: left;
+    margin-left: -300px;
+
+}
+.layout5right {
+        width: 100%;
+    height: 400px;
+    background-color: pink;
+    float: right;
+}

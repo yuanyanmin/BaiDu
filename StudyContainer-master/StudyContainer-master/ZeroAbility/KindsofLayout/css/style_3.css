@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center
+}
+
+span {
+    color: orange;
+}
+
+.demend {
+    width: 100%;
+    text-align: center;
+}
+
+.contentbox {
+    width: 700px;
+    margin: 30px auto;
+    border: 1px solid gray;
+}
+
+.con-desc {
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.contentbox img {
+    width: 100%;
+    height: auto;
+    border: 1px solid greenyellow;
+}
+
+/* 两栏式布局左30%右70% */
+
+.outside1 {
+    width: 100%;
+    height: 400px;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.layout1left {
+    width: 30%;
+    height: 400px;
+    background-color: greenyellow;
+}
+
+.layout1right {
+    width: 70%;
+    height: 400px;
+    background-color: lightsalmon;
+}
+
+/* 两栏布局左固定右自适应 */
+
+.outside2 {
+    width: 100%;
+    height: 400px;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.layout2left {
+    width: 300px;
+    height: 400px;
+    background-color: greenyellow;
+    word-break: break-all;
+}
+
+.layout2right {
+    width: 100%;
+    height: 400px;
+    background-color: lightsalmon;
+    word-break: break-all;
+}
+
+/* 两栏布局右边固定左边自适应 */
+
+.outside3 {
+    width: 100%;
+    height: 400px;
+    /* overflow: hidden; */
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* 其实还可以用左固右自适应的布局加flex-direction来颠倒方向实现 */
+}
+
+.layout3left {
+    width: 100%;
+    height: 400px;
+    background-color: greenyellow;
+    word-break: break-all;
+}
+
+.layout3right {
+    width: 300px;
+    height: 400px;
+    background-color: lightsalmon;
+    word-break: break-all;
+}
+
+/* 三栏布局左右固定中间自适应 */
+
+.outside4 {
+    width: 100%;
+    height: 400px;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.layout4left {
+    width: 300px;
+    height: 400px;
+    background-color: greenyellow;
+    word-break: break-all;
+}
+
+.layout4middle {
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+    word-break: break-all;
+}
+
+.layout4right {
+    width: 300px;
+    height: 400px;
+    background-color: lightsalmon;
+    word-break: break-all;
+}
+
+/* 左中固定宽度，右边自适应 */
+
+.outside5 {
+    width: 100%;
+    height: 400px;
+    /* overflow: hidden; */
+    display: flex;
+}
+
+.layout5left {
+    width: 300px;
+    height: 400px;
+    background-color: greenyellow;
+    word-break: break-all;
+}
+
+.layout5middle {
+    width: 300px;
+    height: 400px;
+    background-color: lightsalmon;
+    word-break: break-all;
+}
+
+.layout5right {
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+    word-break: break-all;
+}
